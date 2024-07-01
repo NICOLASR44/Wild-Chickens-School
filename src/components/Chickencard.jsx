@@ -1,10 +1,10 @@
-function ChickenCard({ ImgSrc }, { Name }, { Role }, { Description }) {
+function ChickenCard({ imgSrc, name, position, biography }) {
   return (
-    <div>
-      <img src={ImgSrc} />
-      <h2>{Name}</h2>
-      <h3> {Role} </h3>
-      <P> {Description} </P>
+    <div className="card">
+      <img src={imgSrc} alt={name} />
+      <h1>{name}</h1>
+      <h2> {position} </h2>
+      <p>{biography}</p>
     </div>
   );
 }
